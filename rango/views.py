@@ -11,4 +11,4 @@ def index(request):
     return render(request, 'rango/index.html', context_dict)
 
 def about(request):
-    return HttpResponse('Hello this is about page!!!' + '<div><a href="/rango">Home<a/><div/>')
+    return render(request, 'rango/about.html')

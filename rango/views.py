@@ -1,5 +1,5 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+
 
 def index(request):
     # Construct a dictionary to pass to the template engine as its context.
@@ -9,6 +9,7 @@ def index(request):
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
     return render(request, 'rango/index.html', context_dict)
+
 
 def about(request):
     return render(request, 'rango/about.html')

@@ -17,6 +17,10 @@ TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 
 STATIC_PATH = os.path.join(BASE_DIR, 'static')
 
+DB_SEED_DIR = 'db_seed_data/'
+
+POPULATION_FILE_PATH = os.path.join(BASE_DIR, DB_SEED_DIR + 'pages.json')
+
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
